@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+prompt_store.db
+
+.env
+.env.local
+.env.*.local
+
+node_modules/
+.next/
+out/
+
+*.log
+

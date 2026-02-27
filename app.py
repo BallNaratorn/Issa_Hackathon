@@ -33,6 +33,7 @@ def _normalize_chat_history(raw_history: List[Dict[str, Any]]) -> List[Dict[str,
         if role not in ("client", "consultant"):
             continue
         normalized.append({"role": role, "message": text})
+    print('kuay')
     return normalized
 
 

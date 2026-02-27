@@ -192,30 +192,6 @@ Manually update the AI prompt with specific instructions.
 
 Test the endpoints hosted publicly on Render/Railway and now you're ready to build from here - time to have fun!
 
-## 2️⃣.5 How to Deploy This Implementation
-
-This repo includes a production-ready Dockerfile and Procfile suitable for Render or Railway.
-
-- **Environment variables** (Render/Railway dashboard):
-  - `OPENAI_API_KEY` (required)
-  - `OPENAI_MODEL` (optional, defaults to `gpt-4.1-mini`)
-  - `PROMPT_DB_PATH` (optional, defaults to `prompt_store.db`)
-- **Docker deployment (Render recommended)**:
-  - New Web Service → connect GitHub repo
-  - Select Docker as runtime, keep default `Dockerfile`
-  - Expose port `8000` (Render uses `$PORT` automatically)
-  - Healthcheck path: `/health`
-- **Non-Docker deployment (Railway/Heroku-style)**:
-  - Use the included `Procfile`:
-    - `web: gunicorn -b 0.0.0.0:$PORT app:app`
-  - Ensure Python 3.11 and `pip install -r requirements.txt` are configured
-
-Once deployed, your public base URL will look like:
-- Render: `https://your-service-name.onrender.com`
-- Railway: `https://your-service-name.up.railway.app`
-
-You can then call the endpoints exactly as in the examples above, just swapping `http://localhost:8000` for your hosted URL.
-
 ## 🧪 How to Submit
 1. Work from anywhere, get help from anyone, do anything you like
 2. When you're done:
@@ -234,11 +210,7 @@ Some examples of improvements include:
 Think of the main characters you admire — what would they do in this situation? They’d go deeper. Take risks. Push boundaries but always stay brave and kind. That’s who we’re looking for.
 
 Good luck and have fun!
-— Team Issa 🚀
-#   I s s a _ H a c k a t h o n  
- #   I s s a _ H a c k a t h o n  
- #   I s s a _ H a c k a t h o n  
- #   I s s a _ H a c k a t h o n  
+— Team Issa 🚀#   I s s a _ H a c k a t h o n  
  #   I s s a _ H a c k a t h o n  
  #   I s s a _ H a c k a t h o n  
  
